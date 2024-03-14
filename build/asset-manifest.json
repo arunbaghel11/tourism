@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/arunbaghel11/tourism/static/css/main.8dc7490d.css",
+    "main.js": "/arunbaghel11/tourism/static/js/main.0a26f352.js",
+    "index.html": "/arunbaghel11/tourism/index.html",
+    "main.8dc7490d.css.map": "/arunbaghel11/tourism/static/css/main.8dc7490d.css.map",
+    "main.0a26f352.js.map": "/arunbaghel11/tourism/static/js/main.0a26f352.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dc7490d.css",
+    "static/js/main.0a26f352.js"
+  ]
+}

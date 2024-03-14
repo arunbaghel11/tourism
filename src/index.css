@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  
+  /* overflow: hidden; Prevent scrollbars */
+  animation: backgroundAnimation 10s infinite linear; /* Change 10s to adjust speed */
+}
+
+/* Define the keyframes for the background color animation */
+@keyframes backgroundAnimation {
+  0% { background-color: red; }
+  25% { background-color: blue; }
+  50% { background-color: green; }
+  75% { background-color: yellow; }
+  100% { background-color: red; }
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.title{
+    border: 7px dashed #0111a0;
+    border-radius: 20px;
+    font-size: 3rem;
+    margin: 6vh;
+    padding: 1vh 5vw;
+}
+
+.cards{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 1300px;
+  
+    
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust width for three cards in a row */
+  width: 400px;
+  height: max-content;
+  margin: 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgba(247, 11, 11, 0.24) 0px 3px 8px;
+  background-color: #1c1a1a;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  animation: changeColor 5s infinite alternate; /* Animation for moving background color */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .image:hover {
+     animation: zoomInFromLeft 0.8s forwards; 
+  }
+   @keyframes zoomInFromLeft {
+    0% {
+      transform: scale(1) translateX(40%);
+      opacity: 2;
+    }
+    100% {
+      transform: scale(1) translateX(0%);
+      opacity: 1;
+    }
+  } 
+  
+
+.tourInfo{
+    margin: 20px 5px;
+}
+
+.tourPrice{
+    color: #1faa59;
+    font-size: 1.3rem;
+}
+
+.tourName{
+    font-size: 1.5rem;
+}
+
+.readMore{
+    color: #12b8c8;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btnRed{
+    text-align: center;
+    color: white;
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid #b4161b;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background: #b4161b21;
+    transition: all 0.5ms;
+    color: black;
+}
+
+.btnRed:hover{
+    background-color: red;
+    color: white;
+}
+
+.refresh{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-like {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  /* margin-left:50px; */
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  margin-left:50px;
+}
+
+.btn-red:hover {
+  background-color: #c82333;
+}
+
+.btn-like img {
+  border-radius: 5px;
+  /* Add any other styling you want for the image */
+}
+
+
+.btnWhite{
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid white;
+}
+
+.btnWhite:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all .2s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  .card {
+    flex: 0 0 calc(33.33% - 20px); 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tour-info {
+    padding: 20px;
+  }
+  
+  .tour-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .tour-prices {
+    color: #007bff;
+  }
+  
+  .tour-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+  }
+  
+  .read-more {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Refresh button */
+  .refresh {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .refresh button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .refresh button:hover {
+    background-color: #0056b3;
+  }
+  
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    
+  }
+  /* Media Queries */
+@media screen and (max-width: 1024px) {
+  .card {
+      flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+      flex-basis: calc(100% - 20px);
+  }
+}
+
+
